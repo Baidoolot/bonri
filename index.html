@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="robots" content="index, follow">
+  
+  <meta name="description" content="Мастер-классы по маникюру с нуля: получите европейский сертификат и узнайте секреты профессионального ухода за ногтями. Курсы в Польше с Анной — реальная история успеха!" lang="ru">
+  <meta name="description" content="Майстер-класи з манікюру з нуля: отримайте європейський сертифікат та дізнайтеся секрети професійного догляду за нігтями. Курси в Польщі з Анною — реальні історії успіху!" lang="ua">
+  <meta name="description" content="Szkolenia manicure od podstaw: zdobądź certyfikat europejski i poznaj sekrety profesjonalnej pielęgnacji paznokci. Kursy w Polsce z Anną — prawdziwe historie sukcesu!" lang="pl">  
+  
+  <link rel="icon" href="icons/faviconweb.png">
+  <link rel="apple-touch-icon" href="icons/faviconios.png">
+  <link rel="apple-touch-icon" href="icons/faviconios.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/queries.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Libery &mdash; Manicure Courses</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="burger-menu">&#9776;</div>
+    <ul class="navbar">
+      <li><a href="#" id="homeLink">Головна</a></li>
+      <li><a href="#start" id="courseLink">Курси</a></li>
+      <li><a href="#reviewsTitle" id="reviewLink">Работи Студентів</a></li>
+      <li><a href="#contacts" id="contactLink">Контакти</a></li>
+    </ul>
+    <div class="language-buttons">
+      <button id="PL" onclick="changeLanguage('PL')">PL</button>
+      <button id="RU" onclick="changeLanguage('RU')">RU</button>
+      <button id="UA" onclick="changeLanguage('UA')">UA</button>
+    </div>
+  </header>
+
+
+
+  <!--Home section-->
+  <section class="home" id="home">
+
+    <div class="home-text">
+      <span class="course_title" data-tranlate="highlightedText" id="homeText">Курси манікюру</span>
+      <h1 id="descText">Давайте разом створимо ваш перший професійний манікюр. </h1>
+    </div>
+    <img src="img/teacher_img.JPG" alt="">
+  </section>
+
+
+
+
+  <!-- Student work carousel section -->
+
+
+  <h2 class="testimonial-title" id="testimonialTitle">реальні історії успіху</h2>
+  <section class="carousel">
+    <h2 class="before-text">before</h2>
+    <img src="img/IMG_BEFORE1.JPG" alt="before course">
+    <h2 class="after-text">after</h2>
+    <img src="img/IMG_AFTER1.JPG" alt="after course">
+    <blockquote class="testimonial">
+      <p class="testimonial-text" id="testimonialText1">
+        Твоя жизнь в твоих руках. 🤍
+
+        <br>Если ты чувствуешь, что чего-то не хватает в твоём мастерстве или пришло время что-то поменять в твоей жизни - самое время сделать шаг вперёд!
+        • Новая профессия.
+        • Идеально чистый маникюр.
+        • наращивание за 1,5 часа.
+        • Педикюр с правильным покрытием и гладкими пятками.
+        Все это возможно! 🪄
+         • До сих пор думаешь маникюр - это твое ? А вдруг не получится? А ты попробуй дойти до результата. ✨
+        
+        И самое главное! 🤍
+        • Ваш успех - это моя победа! 
+        
+        Не бойся мечтать о большем! Сделай первый шаг, а я помогу тебе достичь твоей цели и стать мастером, которым ты всегда мечтала быть.
+        Твоя мечта — ближе, чем кажется. Действуй уже сегодня!🤍
+      </p>
+      <p class="testimonial-student">
+        - START course
+      </p>
+    </blockquote>
+  </section>
+
+  <section class="carousel">
+    <h2 class="before-text">before</h2>
+    <img src="img/IMG_BEFORE3.jpg" alt="before course">
+    <h2 class="after-text">after</h2>
+    <img src="img/IMG_AFTER3.jpg" alt="after course">
+    <blockquote class="testimonial">
+      <p class="testimonial-text" id="testimonialText2">
+        За 7 месяцев с базового курса. Открытие своего салона, стабильный заработок с маникюра от 4.000.
+      </p>
+      <p class="testimonial-student">
+        - START course
+      </p>
+    </blockquote>
+  </section>
+
+  <section class="carousel">
+    <h2 class="before-text">before</h2>
+    <img src="img/IMG_BEFORE2.jpg" alt="before course">
+    <h2 class="after-text">after</h2>
+    <img src="img/IMG_AFTER2.jpg" alt="after course">
+    <blockquote class="testimonial">
+      <p class="testimonial-text" id="testimonialText3">
+        За 1 год с базового курса до загруженности в 80%. Из них 70% постоянных клиентов. Стабильный заработок, работа в
+        салоне.
+      </p>
+      <p class="testimonial-student">
+        - START course
+      </p>
+    </blockquote>
+  </section>
+
+  <!--Courses Section-->
+
+
+
+  <section class="hero">
+    <h2 class="course_title" id="courseTitle">Курси</h2>
+    <section class="course-type">
+      <div class="course-card basic" onmouseover="toggleInfo(this)" onmouseout="toggleInfo(this)">
+        <h2 id="baseTitle">Базовий курс</h2>
+        <div class="course-info">
+          <p id="durationStart">4 дні</p>
+          <p class="price" id="priceStart">Ціна: 2500 зл</p>
+          <p id="duration2Start">Теорі я 14-18 годин.
+            Практика 21-25 годин.
+          </p>
+          <a href="#start"><button class="button-83" role="button" id="buttonTextStart">Детальніше</button></a>
+        </div>
+      </div>
+
+      <div class="course-card advanced" onmouseover="toggleInfo(this)" onmouseout="toggleInfo(this)">
+        <h2 id="combyTitle">Comby manicure</h2>
+        <div class="course-info">
+          <p id="durationStartplus">1 днів</p>
+          <p class="price" id="priceStartplus">Ціна: 900 зл</p>
+          <p id="duration2Startplus">Теорія 2 годин.
+            Практика 9-10 годин.</p>
+          <a href="#plus"><button class="button-83" role="button" id="buttonTextStartplus">Детальніше</button></a>
+        </div>
+      </div>
+      <div class="course-card advanced" onmouseover="toggleInfo(this)" onmouseout="toggleInfo(this)">
+        <h2 id="salonTitle">Салонное наращивание</h2>
+        <div class="course-info">
+          <p id="durationStartmax">1 днів</p>
+          <p class="price" id="priceStartmax">Ціна: 900 зл</p>
+          <p id="duration2Startmax">Теорія 2 годин.
+            Практика 9-10 годин.</p>
+          <a href="#plus"><button class="button-83" role="button" id="buttontextStartmax">Детальніше</button></a>
+
+        </div>
+      </div>
+      <div class="course-card advanced" onmouseover="toggleInfo(this)" onmouseout="toggleInfo(this)">
+        <h2 id="pedicureTitle">Педикюр</h2>
+        <div class="course-info">
+          <p id="durationStartpromax">1 днів</p>
+          <p class="price" id="priceStartpromax">Ціна: 900 pln </p>
+          <p id="duration2Startpromax">Теорія 9-10 годин.
+            Практика 21-25 годин.</p>
+          <a href="#plus"><button class="button-83" role="button" id="buttonStartpromax">Детальніше</button></a>
+
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <h2 id="reviewsTitle" class="review-title">Роботи Студентів</h2>
+  <section class="reviews">
+    <div class="review-card">
+      <div class="student-img">
+        <img src="img/IMG_1.JPG" class="image-item" alt="Student Photo">
+        <img src="img/IMG_2.JPG" class="image-item" alt="Student Photo">
+        <img src="img/IMG_3.JPG" class="image-item" alt="Student Photo">
+        <img src="img/IMG_4.JPG" class="image-item" alt="Student Photo">
+        <img src="img/IMG_5.JPG" class="image-item" alt="Student Photo">
+        <img src="img/IMG_6.JPG" class="image-item" alt="Student Photo">
+        <img src="img/IMG_7.JPG" class="image-item" alt="Student Photo">
+        <img src="img/IMG_8.JPG" class="image-item" alt="Student Photo">
+        <img src="img/IMG_9.JPG" class="image-item" alt="Student Photo">
+        <img src="img/IMG_10.JPG" class="image-item" alt="Student Photo">
+        <img src="img/IMG_11.JPG" class="image-item" alt="Student Photo">
+        <img src="img/IMG_12.JPG" class="image-item" alt="Student Photo">
+        <img src="img/IMG_13.JPG" class="image-item" alt="Student Photo">
+        <img src="img/IMG_14.JPG" class="image-item" alt="Student Photo">
+        <img src="img/IMG_15.JPG" class="image-item" alt="Student Photo">
+        <img src="img/IMG_16.JPG" class="image-item" alt="Student Photo">
+        <img src="img/IMG_17.JPG" class="image-item" alt="Student Photo">
+        <img src="img/IMG_18.JPG" class="image-item" alt="Student Photo">
+        <img src="img/IMG_19.JPG" class="image-item" alt="Student Photo">
+        <img src="img/IMG_20.JPG" class="image-item" alt="Student Photo">
+      </div>
+    </div>
+  </section>
+
+  <section class="courses">
+    <div class="course-details" id="start"></div>
+    <div class="course-details" id="plus"></div>
+    <div class="course-details" id="comby"></div>
+    <div class="course-details" id="kval"></div>
+  </section>
+
+  <footer>
+    <div class="footer-contact" id="contacts">
+      <p>&copy; 2024 Libery Manicure Courses. All rights reserved.</p>
+      <p>Contact us:<a href="https://m.facebook.com/profile.php?id=100080478502989">КЛІК</a> | Номер: +48 669 739 667
+      </p>
+      <section class="s-icons">
+        <a href="https://www.instagram.com/bonri.nails/"><img src="/icons/icons8-instagram-50.png" alt="instagram icon"
+            width="30" height="30"></a>
+        <a href="https://m.facebook.com/profile.php?id=100080478502989"><img src="/icons/icons8-facebook-50.png"
+            alt="facebook icon" width="30" height="30"></a>
+        <a href="https://t.me/Ann_Bondarieva"><img src="/icons/icons8-telegram-50.png" alt="telegram icon" width="30"
+            height="30"></a>
+      </section>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
